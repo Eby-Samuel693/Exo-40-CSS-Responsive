@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: purple;
+}
+
+#div1 {
+    width: 40%;
+    display: inline-block;
+    background-color: cornflowerblue;
+}
+
+#div2 ,#div3 {
+    width: 20%;
+    display: inline-block;
+}
+
+#div2 {
+    border: 1px dashed black;
+    background-color: red;
+}
+
+#div3 {
+    border: 1px dashed black;
+    background-color: chartreuse;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        margin: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    #div1 ,#div2 ,div3 {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #div3 {
+        display: none;
+    }
+}
